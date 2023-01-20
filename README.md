@@ -28,7 +28,8 @@ Build your preferred Docker environment, for this example, we will be using depl
    ```sh
    docker compose -f docker-compose.prod.yml up -d
    ```
-3. Access the site @ `localhost:3000`
+3. Make sure your MongoDB_data docker volume has a database called `scd` and a collection titled `participation` 
+4. Access the site @ `localhost:3000`
 ## Node
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
