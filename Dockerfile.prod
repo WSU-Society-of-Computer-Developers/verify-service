@@ -1,0 +1,14 @@
+FROM node:18.11.0
+WORKDIR /usr/src/app/
+RUN cd /usr/src/app/
+RUN echo "running prod build..."
+# COPY PROJ FILES
+COPY package*.json ./
+RUN npm install
+# COPY next.config.js ./
+# COPY next.config.js ./next.config.js
+# COPY pages ./pages
+# COPY styles ./styles
+COPY ./ ./
+RUN npm run build
+CMD ["npm", "run", "start"]

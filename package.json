@@ -1,0 +1,23 @@
+{
+  "name": "verify-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.4.4",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.3",
+    "next": "13.1.2",
+    "next-hcaptcha": "^1.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3"
+  }
+}
